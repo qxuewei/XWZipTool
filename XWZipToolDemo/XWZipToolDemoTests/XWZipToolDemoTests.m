@@ -38,7 +38,7 @@
 }
 
 - (void)testUnPasswordZip {
-    NSString *zipFilePath = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"zip"];
+    NSString *zipFilePath = [[NS	Bundle mainBundle] pathForResource:@"123" ofType:@"zip"];
     if (zipFilePath.length > 0) {
         NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"123"];
         BOOL isSuccess = [XWZipTool unZipFromFilePath:zipFilePath password:@"123" toSaveFilePath:savePath];
