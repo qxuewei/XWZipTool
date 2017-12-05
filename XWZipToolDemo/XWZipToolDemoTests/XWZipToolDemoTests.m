@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "XWZipTool.h"
 
 @interface XWZipToolDemoTests : XCTestCase
 
@@ -24,10 +25,30 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testUnZip {
+    NSString *zipFilePath = [[NSBundle mainBundle] pathForResource:@"siheyuan" ofType:@"zip"];
+    if (zipFilePath.length > 0) {
+        NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"siheyuan"];
+        BOOL isSuccess = [XWZipTool unZipFromFilePath:zipFilePath toSaveFilePath:savePath];
+        if (isSuccess) {
+            NSLog(@"解压路径:%@",savePath);
+        }
+        XCTAssertTrue(isSuccess);
+    }
 }
+
+- (void)testUnPasswordZip {
+    NSString *zipFilePath = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"zip"];
+    if (zipFilePath.length > 0) {
+        NSString *savePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"123"];
+        BOOL isSuccess = [XWZipTool unZipFromFilePath:zipFilePath password:@"123" toSaveFilePath:savePath];
+        if (isSuccess) {
+            NSLog(@"解压路径:%@",savePath);
+        }
+        XCTAssertTrue(isSuccess);
+    }
+}
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

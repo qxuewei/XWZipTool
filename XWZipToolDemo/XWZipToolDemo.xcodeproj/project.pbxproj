@@ -15,6 +15,13 @@
 		DE97ED1B1FD63A23001B21D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED1A1FD63A23001B21D9 /* main.m */; };
 		DE97ED251FD63A23001B21D9 /* XWZipToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED241FD63A23001B21D9 /* XWZipToolDemoTests.m */; };
 		DE97ED321FD63A50001B21D9 /* XWZipTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97ED311FD63A50001B21D9 /* XWZipTool.m */; };
+		DECB9B451FD66F3800D09B80 /* siheyuan.zip in Resources */ = {isa = PBXBuildFile; fileRef = DECB9B441FD66F3800D09B80 /* siheyuan.zip */; };
+		DECB9B491FD67CE200D09B80 /* 123.zip in Resources */ = {isa = PBXBuildFile; fileRef = DECB9B481FD67CE200D09B80 /* 123.zip */; };
+		DEE942C91FD63D0400806896 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DEE942BF1FD63D0400806896 /* unzip.c */; };
+		DEE942CA1FD63D0400806896 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DEE942C01FD63D0400806896 /* zip.c */; };
+		DEE942CB1FD63D0400806896 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DEE942C11FD63D0400806896 /* ioapi.c */; };
+		DEE942CC1FD63D0400806896 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DEE942C21FD63D0400806896 /* mztools.c */; };
+		DEE942CD1FD63D0400806896 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE942C81FD63D0400806896 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,19 @@
 		DE97ED261FD63A23001B21D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE97ED301FD63A50001B21D9 /* XWZipTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWZipTool.h; sourceTree = "<group>"; };
 		DE97ED311FD63A50001B21D9 /* XWZipTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWZipTool.m; sourceTree = "<group>"; };
+		DECB9B441FD66F3800D09B80 /* siheyuan.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = siheyuan.zip; sourceTree = "<group>"; };
+		DECB9B481FD67CE200D09B80 /* 123.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = 123.zip; sourceTree = "<group>"; };
+		DEE942BD1FD63D0400806896 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		DEE942BF1FD63D0400806896 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DEE942C01FD63D0400806896 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DEE942C11FD63D0400806896 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DEE942C21FD63D0400806896 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DEE942C31FD63D0400806896 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DEE942C41FD63D0400806896 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DEE942C51FD63D0400806896 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DEE942C61FD63D0400806896 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DEE942C71FD63D0400806896 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DEE942C81FD63D0400806896 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +104,7 @@
 		DE97ED0A1FD63A23001B21D9 /* XWZipToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DECB9B4A1FD67D6A00D09B80 /* Resource */,
 				DE97ED2F1FD63A3A001B21D9 /* XWZipTool */,
 				DE97ED0B1FD63A23001B21D9 /* AppDelegate.h */,
 				DE97ED0C1FD63A23001B21D9 /* AppDelegate.m */,
@@ -110,10 +131,46 @@
 		DE97ED2F1FD63A3A001B21D9 /* XWZipTool */ = {
 			isa = PBXGroup;
 			children = (
+				DEE942BC1FD63D0400806896 /* ZipArchive */,
 				DE97ED301FD63A50001B21D9 /* XWZipTool.h */,
 				DE97ED311FD63A50001B21D9 /* XWZipTool.m */,
 			);
 			path = XWZipTool;
+			sourceTree = "<group>";
+		};
+		DECB9B4A1FD67D6A00D09B80 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DECB9B481FD67CE200D09B80 /* 123.zip */,
+				DECB9B441FD66F3800D09B80 /* siheyuan.zip */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DEE942BC1FD63D0400806896 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DEE942BE1FD63D0400806896 /* minizip */,
+				DEE942BD1FD63D0400806896 /* ZipArchive.h */,
+				DEE942C81FD63D0400806896 /* ZipArchive.m */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		DEE942BE1FD63D0400806896 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DEE942BF1FD63D0400806896 /* unzip.c */,
+				DEE942C01FD63D0400806896 /* zip.c */,
+				DEE942C11FD63D0400806896 /* ioapi.c */,
+				DEE942C21FD63D0400806896 /* mztools.c */,
+				DEE942C31FD63D0400806896 /* crypt.h */,
+				DEE942C41FD63D0400806896 /* zip.h */,
+				DEE942C51FD63D0400806896 /* unzip.h */,
+				DEE942C61FD63D0400806896 /* mztools.h */,
+				DEE942C71FD63D0400806896 /* ioapi.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECB9B491FD67CE200D09B80 /* 123.zip in Resources */,
 				DE97ED181FD63A23001B21D9 /* LaunchScreen.storyboard in Resources */,
 				DE97ED151FD63A23001B21D9 /* Assets.xcassets in Resources */,
 				DE97ED131FD63A23001B21D9 /* Main.storyboard in Resources */,
+				DECB9B451FD66F3800D09B80 /* siheyuan.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE97ED101FD63A23001B21D9 /* ViewController.m in Sources */,
+				DEE942CD1FD63D0400806896 /* ZipArchive.m in Sources */,
+				DEE942C91FD63D0400806896 /* unzip.c in Sources */,
+				DEE942CC1FD63D0400806896 /* mztools.c in Sources */,
 				DE97ED1B1FD63A23001B21D9 /* main.m in Sources */,
+				DEE942CA1FD63D0400806896 /* zip.c in Sources */,
 				DE97ED321FD63A50001B21D9 /* XWZipTool.m in Sources */,
 				DE97ED0D1FD63A23001B21D9 /* AppDelegate.m in Sources */,
+				DEE942CB1FD63D0400806896 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
